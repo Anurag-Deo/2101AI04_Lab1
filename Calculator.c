@@ -12,6 +12,10 @@ int multiply(int a, int b) {
     return a * b;
 }
 
+int divide(int a, int b) {
+    return a / b;
+}
+
 int main(){
     printf("Please choose an operation among the following:\n");
     printf("1. Addition\n");
@@ -39,6 +43,12 @@ int main(){
             int num5, num6;
             scanf("%d %d", &num5, &num6);
             printf("The product of %d and %d is %d\n", num5, num6, multiply(num5, num6));
+            break;
+        case 4:
+            printf("Please enter two numbers to divide:\n");
+            int num7, num8;
+            scanf("%d %d", &num7, &num8);
+            printf("The quotient of %d and %d is %d\n", num7, num8, divide(num7, num8));
             break;
         default:
             printf("Invalid choice. Exiting...\n");
